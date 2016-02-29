@@ -4,7 +4,7 @@ author: "Shibashis"
 date: "February 28, 2016"
 output: html_document
 ---
-
+# CodeBook
 This codebook describes the source data information and the data in the output tidy dataset created by this project in the following three sections.                                           
                       1. Source Dataset Information       
                       2. Source Data Description        
@@ -95,9 +95,11 @@ The complete list of variables of each feature vector is available in **'feature
 The output tidy data set contains average of only the measurements on the mean and standard deviation for each measurement for each activity and each subject. There are 66 mean and standard deviation features averaged for each Subject by activity. For 30 subjects and 6 activities the resulting file has 180 rows and 68 columns – 33 Mean variables and 33 Standard deviation variables and 1 Subject( 1 of of the 30 test subjects) and ActivityName. The  first row is the header containing the names for each column. Following describes teh variables in the tidy dataset.
 
 ```{r}
-Subject                         Char	1     Identifies the subject under Observation
+Name                            Type  Length  Description
 
-Activity                        Char	18    Identifies the activity being performed by the subject
+Subject                         Char	1       Identifies the subject under Observation
+
+Activity                        Char	18      Identifies the activity being performed by the subject
                                                 Valid Values: 
                                                 WALKING
                                                 WALKING_UPSTAIRS
